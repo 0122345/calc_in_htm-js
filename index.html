@@ -5,12 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> calculator</title>
-    <link ref="stylesheet" href="styles.css"/>
-
+    <link rel="stylesheet" href="styles.css"/>
+     <script src="calc.js">
+     </script>
 </head>
 <body>
      <div class="formstyle">
-        <form>
+        <form name="form1">
             <input class="textview" name ="textview">
         </form>
         <center>
@@ -20,13 +21,13 @@
                         <input class="btn" type="button" value="C" onclick="form1.textview.value = ''">
                     </td>
                     <td>
-                        <input class="btn" type="button" value="B" onclick="backspace()">
-                    </td>
-                    <td>
                         <input class="btn" type="button" value=" /" onclick=" insert('/')">
                     </td>
                     <td>
                         <input class="btn" type="button" value=" x" onclick=" insert('*')">
+                    </td>
+                    <td>
+                        <input class="btn" type="button" value="B" onclick="backspace()">
                     </td>
                 </tr>
                 <tr>
@@ -72,8 +73,11 @@
                     </td>
                 </tr>
                  <tr>
-                    <td colspan = "2">
-                        <input class="btn" style="width: 106px;" type="button" value="0" onclick="insert(0)">
+                    <td >
+                        <input class="btn"  type="button" value="%" onclick="insert('%')">
+                    </td>
+                    <td >
+                        <input class="btn"  type="button" value="0" onclick="insert(0)" onclick="percentage()">
                     </td>
                     <td>
                         <input class="btn" type="button" value ="." onclick="insert('.')">
