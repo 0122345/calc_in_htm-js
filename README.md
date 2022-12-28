@@ -1,3 +1,5 @@
 # calc_in_htm-js
-![screen  of shoot of calculator](calculator.jpg)
+![screen_shoot](cal.jpg)
 ## IT is consist of 3 main files
+
+ 
